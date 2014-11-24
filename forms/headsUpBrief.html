@@ -1,0 +1,70 @@
+<div class="tab-pane fade in" id="step2">
+    <div class="col-md-12">
+        <h2>Step 2: Select the type of job</h2>
+        <hr />
+        <div class="form-group">
+        <label for="client">Client</label>
+        <select name="client" id="client" class="form-control">
+            <option value="RBS">RBS</option>
+            <option value="White Company">White Company</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Serco">Serco</option>
+            <option value="Kwik-Fit">Kiwk-Fit</option>
+            <option value="Tesco">Tesco</option>
+            <option value="Other">Other</option>
+        </select>
+      </div>
+        <div class="form-group">
+        <label for="jobno">Job Number</label>
+        <input type="text" class="form-control limited" maxlength="5" data-mask="99999" name="jobno" id="jobno" placeholder="Please enter a Job Number">
+      </div>
+       <div class="form-group">
+        <label for="projectName">Project Name</label>
+        <input type="text" class="form-control" name="projectName" id="projectName" placeholder="Please enter a Project Name">
+      </div>
+       <div class="form-group">
+        <label for="reviewDate">Brief Due Date</label>
+        <input type="text" class="form-control datepick" name="reviewDate" id="reviewDate" placeholder="Select the Brief Due Date">
+      </div>
+       <div class="form-group">
+        <label for="clientPresentationDate">Client Presentation Date</label>
+        <input type="text" class="form-control datepick" name="clientPresentationDate" id="clientPresentationDate" placeholder="Select the Client Presentation Date">
+      </div>
+       <div class="form-group">
+        <label for="budget">Budget</label>
+        <div class="input-group">
+            <div class="input-group-addon">&pound;</div>
+            <input type="text" class="form-control" name="budget" id="productionBudget" placeholder="Please enter the production budget">
+        </div>
+      </div>
+        <a href="javascript:tabPrev();" class="btn btn-default btnPrev">Previous</a>
+        <a href="javascript:tabNext();" class="btn btn-default btnNext">Next</a>
+    </div>
+</div>
+
+
+<div class="tab-pane fade in" id="step3">
+    <div class="col-md-12">
+        <h2>Step 2: Job specifics</h2>
+        <div class="form-group">
+            <label for="scopeOfWork">Scope of Work</label>
+            <input type="text" class="form-control" name="scopeOfWork" id="scopeOfWork" placeholder="Enter the Scope of Work">
+        </div>
+        <div class="form-group">
+            <label for="projectDescription">Project description</label>
+            <input type="text" class="form-control" name="projectDescription" id="projectDescription" placeholder="Enter the Project Description">
+        </div>
+        <div class="form-group">
+            <label for="finishedVisuals">Finished visuals</label>
+            <input type="text" class="form-control" name="finishedVisuals" id="finishedVisuals" placeholder="Enter the Finished Visuals">
+        </div>
+        <div class="form-group">
+            <label for="expectedResourceRequirements">Expected resource requirements</label>
+            <input type="text" class="form-control" name="expectedResourceRequirements" id="expectedResourceRequirements" placeholder="Enter the Finished Visuals">
+        </div>
+        <div class="form-group">
+            <label for="importantToKnow">Anything important to know</label>
+            <input type="text" class="form-control" name="importantToKnow" id="importantToKnow" placeholder="Enter anything important to know">
+        </div>
+    </div>
+</div>

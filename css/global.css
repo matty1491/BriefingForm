@@ -1,0 +1,61 @@
+.logo {margin: 20px 0; }
+
+.gigLogo { margin-top:5px; }
+.gigLogo img { height: 38px; width: auto; }
+.clientLogo {height:89px; position: relative; margin-top:10px;}
+.clientLogo img {float: right; width: 80%; height: auto; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.ie8 .clientLogo img {left: 0px;top: 0px;}
+.blurb {text-align: center;}
+
+.fix-header ul {display: inline-block; list-style:none; float:right; padding-top:13px;}
+.fix-header ul li {display:inline;}
+.fix-header ul li:first-child {margin-right:20px;}
+
+.fix-header { position: fixed; width:100%; z-index: 9999; margin-top: -50px; background-color: #CECFCF; height:50px; color:#ffffff; }
+
+.formContainer {margin-bottom: 20px;}
+#formFeedback .form-control-feedback {color: #ffffff; display: inline-block; margin: 0 5px;}
+#formFeedback.success {background-color: #1eb700}
+
+#formFeedback { background-color: #a94442; color:#ffffff; padding: 10px 5px; border-radius: 3px; margin-bottom: 10px;}
+
+.error {margin-top: 10px; color: #f00; }
+
+
+.radioGap {margin-right: 10px !important; }
+
+.tab-content > form > .tab-pane,
+ #dynaContent > .tab-pane {
+    display: none;
+}
+.tab-content > form > .active,
+#dynaContent > .active,
+.pill-content > form > .active {
+    display: block;
+}
+
+#lpOptions, #msOptions {
+    display: none;   
+}
+
+.disabledTab { pointer-events: none; }
+
+#workType1Label, #workType2Label, #workType3Label, #workType4Label {font-weight: normal;}
+
+[data-toggle="popover"] {display: inline-block;}
+
+@media screen and (max-width:991px){
+    .logo { height: auto !important; }
+    .logo img {max-width: 30%; margin: 0 auto;}
+    .clientLogo {height: auto;}
+    .clientLogo img {position: relative; display: block; top: 0; bottom: 0; left: 0; margin: 20px auto 0 auto; float: none; -webkit-transform: translate(0%, 0%); transform: translate(0%, 0%);}
+}
+
+@media (max-width: 767px) {
+    .gigLogo img { height: 28px; width: auto;  margin-top:7px;}
+    .fix-header ul {font-size: 12px;} 
+}
+
+@media (max-width: 347px) {
+    .fix-header ul {font-size: 11px;} 
+}

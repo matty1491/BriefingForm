@@ -1,0 +1,11 @@
+# password protect excluding specific ip
+<IfModule mod_auth.c>
+ AuthName "Username and password required"
+ AuthType Basic
+ Require valid-user
+ Order Deny,Allow
+ Deny from all
+ Allow from 79.99.147.196
+ Satisfy Any
+</IfModule>
+AuthUserFile "/home/lateralg/.htpasswds/public_html/previews-gigatdstcom/passwd"
